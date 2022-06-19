@@ -1,0 +1,41 @@
+---
+import '@/styles/tailwind.css'
+import { Img } from 'astro-imagetools/components'
+---
+
+<main class="bg-cyan-100 wiggle-pattern min-h-screen">
+  <section class="grid grid-cols-4">
+    <div
+      class="rounded-br-full overflow-hidden w-44 md:w-[68%] xl:w-[45%] 2xl:w-[55%] col-span-2 ring-2 ring-purple-300">
+      <Img src="/tepsi-front.webp" alt="Frying pan front" />
+    </div>
+    <ul
+      class="col-span-2 text-3xl md:text-7xl flex flex-col justify-center items-center font-inter font-extrabold italic text-pink-400">
+      <li class="bg-purple-700 px-2 py-1 md:px-6 md:py-4">my dear</li>
+      <li class="bg-purple-600 px-2 py-1 md:px-6 md:py-4">frying pan</li>
+    </ul>
+  </section>
+  <section>
+    <ul
+      class="text-5xl md:text-7xl flex flex-col justify-center items-center font-inter font-extrabold italic text-pink-400 py-40">
+      <li class="transition-transform hover:scale-125">some <a
+          class="before:content-['#'] underline underline-offset-2 text-purple-500"
+          href="https://instagram.com/csikitzu">
+          bitch
+        </a>
+      </li>
+      <li>wanted to steal it</li>
+    </ul>
+  </section>
+  <section class="grid grid-cols-4">
+    <ul
+      class="col-span-2 text-3xl md:text-7xl flex flex-col justify-center items-center font-inter font-extrabold italic text-pink-400">
+      <li class="bg-purple-600 px-2 py-1 md:px-6 md:py-4">I fry</li>
+      <li class="bg-purple-700 px-2 py-1 md:px-6 md:py-4">🍳 in it</li>
+    </ul>
+    <div
+      class="rounded-tl-full overflow-hidden w-44 md:w-[68%] xl:w-[45%] 2xl:w-[55%] col-span-2 place-self-end ring-2 ring-purple-300">
+      <Img src="/tepsi-back.webp" alt="Frying pan back" />
+    </div>
+  </section>
+</main>
